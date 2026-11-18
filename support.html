@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#070816">
+<title>Intentions Support</title>
+<meta name="description" content="How Intentions works, answers to common questions, and how to reach us.">
+<style>
+  :root {
+    --night: #070816; --ink: #ffffff; --ink-2: rgba(230, 234, 255, .72); --ink-3: rgba(230, 234, 255, .5);
+    --indigo: #4c3dff; --teal: #0fb5a6; --violet: #9b3dff; --peri: #8a7dff;
+    --glass: rgba(255, 255, 255, .06); --glass-edge: rgba(255, 255, 255, .12);
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--night); }
+  body {
+    margin: 0; min-height: 100vh; color: var(--ink-2); background: var(--night);
+    background-image:
+      radial-gradient(60rem 36rem at 10% -10%, rgba(76, 61, 255, .38), transparent 60%),
+      radial-gradient(48rem 30rem at 110% 10%, rgba(15, 181, 166, .26), transparent 60%),
+      radial-gradient(50rem 34rem at 50% 110%, rgba(155, 61, 255, .24), transparent 60%);
+    background-attachment: fixed;
+    font: 17px/1.6 ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 40rem; margin: 0 auto; padding: max(2.5rem, env(safe-area-inset-top)) 16px 4rem; }
+  .brand { display: flex; align-items: center; gap: .75rem; margin-bottom: 1.75rem; text-decoration: none; color: var(--ink); }
+  .mark { width: 44px; height: 44px; border-radius: 12px; flex: none;
+    background: radial-gradient(circle at 30% 30%, var(--teal), transparent 60%), radial-gradient(circle at 70% 70%, var(--violet), transparent 60%), var(--indigo); }
+  .brand b { font-size: 1.15rem; letter-spacing: .01em; }
+  h1 { color: var(--ink); font-size: 2rem; line-height: 1.15; margin: 0 0 .6rem; }
+  h2 { color: var(--ink); font-size: 1.15rem; margin: 2.25rem 0 .5rem; }
+  p { margin: .6rem 0; }
+  strong { color: var(--ink); font-weight: 600; }
+  a { color: var(--peri); text-underline-offset: 3px; }
+  .card { background: var(--glass); border: 1px solid var(--glass-edge); border-radius: 22px; padding: 1.1rem 1.25rem;
+    -webkit-backdrop-filter: blur(18px); backdrop-filter: blur(18px); margin: 1rem 0; }
+  .card p:first-child { margin-top: 0; } .card p:last-child { margin-bottom: 0; }
+  details { background: var(--glass); border: 1px solid var(--glass-edge); border-radius: 18px; margin: .6rem 0; padding: 0 1.1rem; }
+  summary { cursor: pointer; color: var(--ink); font-weight: 600; padding: .9rem 0; list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "+"; float: right; color: var(--ink-3); font-weight: 400; }
+  details[open] summary::after { content: "\2212"; }
+  details p { margin: 0 0 .9rem; }
+  footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--glass-edge); color: var(--ink-3); font-size: .9rem; }
+  footer a { margin-right: 1rem; }
+</style>
+</head>
+<body>
+<main>
+<a class="brand" href="index.html"><span class="mark" aria-hidden="true"></span><b>Intentions</b></a>
+
+<h1>Support</h1>
+<p>Intentions turns a goal you care about into one small step a day. You write what you want in 1, 5 or 10 years and
+why, get a plan that runs down to this week and today, and do a 5- or 10-minute step tied to something you already do.</p>
+
+<div class="card">
+<p><strong>Need a hand?</strong> Email <a href="mailto:austinnormanads@gmail.com">austinnormanads@gmail.com</a>.
+Tell us your iPhone model, your iOS version and the app version (it's at the bottom of the Me tab).</p>
+</div>
+
+<h2>Questions</h2>
+
+<details>
+<summary>Do I need an account?</summary>
+<p>No. There's nothing to sign up for. Your goals and progress are kept on your phone.</p>
+</details>
+
+<details>
+<summary>How do I mark a step as done?</summary>
+<p>On Today, press and hold the step for about a second until it fills, then let go. There's no timer: do the step
+whenever it fits, then hold to mark it.</p>
+</details>
+
+<details>
+<summary>What happens if I miss a day?</summary>
+<p>Nothing breaks. The rule is "never miss twice": one missed day pauses your streak, and doing your step the next day
+carries it on. Two missed days in a row start the streak over. Your tree keeps every day you've done either way.</p>
+</details>
+
+<details>
+<summary>Do I have to use the AI?</summary>
+<p>No. When your plan is ready to draft, tap <strong>I'll write it myself</strong> and write each line. Even with
+the AI, you can change any line it wrote. If you said yes earlier, turn it off in <strong>Me &rsaquo; Let AI draft my
+plans and lesson examples</strong>. With it off, nothing you write is sent anywhere.</p>
+</details>
+
+<details>
+<summary>What does the AI see?</summary>
+<p>Only what it needs. For your plan: the life area, your goal, why it matters, where you're starting from and your
+minutes a day. For each new week: your goal, why it matters, last week's title, today's step and how many days you did it. For lesson
+examples: your goal, today's step and when you do it. It goes from our server to Anthropic's Claude, through OpenRouter,
+and our server doesn't keep it. The <a href="privacy.html">privacy policy</a> has the details.</p>
+</details>
+
+<details>
+<summary>How do reminders work?</summary>
+<p>You get a reminder at the time you picked for your step, and an evening reminder only if a step is still open that
+day. Turn either one off in <strong>Me &rsaquo; Reminders</strong>. If you see no reminders, check that notifications
+are allowed for Intentions in the iPhone's Settings app.</p>
+</details>
+
+<details>
+<summary>What is habit stacking?</summary>
+<p>Once a habit has held for 14 days in a row, you can claim a reward that lets you add a second small habit right
+after the first one.</p>
+</details>
+
+<details>
+<summary>Can I skip today's lesson?</summary>
+<p>Yes. The one-minute lesson comes after your steps, and skipping it is one tap. Your streak is safe.</p>
+</details>
+
+<details>
+<summary>How do I put a goal away?</summary>
+<p>Open the goal in Plan, tap the &hellip; button, and choose <strong>Archive</strong>. If you reached it, choose
+<strong>Mark as done</strong> instead.</p>
+</details>
+
+<details>
+<summary>How do I delete my data?</summary>
+<p>Everything you've entered lives on your phone, so deleting the app deletes it for good; we can't restore it. If you
+used the AI, our server keeps only a random ID and a daily count of AI requests, with none of your words. The app
+has no button to delete those yet; email us and we'll tell you what we can do.</p>
+</details>
+
+<details>
+<summary>Which devices does it run on?</summary>
+<p>iPhone only.</p>
+</details>
+
+<h2>Contact</h2>
+<p>Intentions is made by Austin Norman.
+<a href="mailto:austinnormanads@gmail.com">austinnormanads@gmail.com</a></p>
+
+<footer>
+  <a href="index.html">Intentions</a><a href="privacy.html">Privacy Policy</a>
+</footer>
+</main>
+</body>
+</html>
